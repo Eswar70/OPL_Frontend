@@ -8,6 +8,7 @@ import Dashboard from "./pages/Dashboard";
 import Tasks from "./pages/Tasks";
 import TaskFormPage from "./pages/TaskFormPage";
 import TaskEditPage from "./pages/TaskEditPage";
+import './App.css';
 import "./styles/global.css";
 
 const App = () => (

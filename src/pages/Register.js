@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import { registerUser } from "../api/api";
 import { AuthContext } from "../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
+import ThemeToggle from "../components/ThemeToggle";
 import Styles from "../styles/Auth.module.css";
 
 const Register = () => {
@@ -40,6 +41,7 @@ const Register = () => {
 
   return (
     <div className={Styles.register}>
+      <ThemeToggle />
       <h2>Register</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />

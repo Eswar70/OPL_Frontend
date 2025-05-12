@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
+import ThemeToggle from "./ThemeToggle";
 import styles from "../styles/Header.module.css";
 
 const Header = () => {
@@ -10,6 +11,7 @@ const Header = () => {
     <header className={styles.header}>
       <Link to="/" className={styles.logo}>Dashboard</Link>
       {user ? <button onClick={logout} className={styles.logout}>Logout</button> : <Link to="/login">Login</Link>}
+      <ThemeToggle />
     </header>
   );
 };

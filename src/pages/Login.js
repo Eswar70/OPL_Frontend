@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import { loginUser } from "../api/api";
 import { AuthContext } from "../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
+import ThemeToggle from "../components/ThemeToggle";
 import styles from "../styles/Auth.module.css";
 
 const Login = () => {
@@ -32,6 +33,7 @@ const Login = () => {
 
   return (
     <div className={styles.container}>
+      <ThemeToggle />
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />

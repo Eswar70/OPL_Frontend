@@ -1,0 +1,31 @@
+.light-theme {
+  background-color: white;
+  color: black !important;
+}
+
+.dark-theme {
+  background-color: black;
+  color: white !important;
+}
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #949090;
+}
+
+/* Light Theme */
+body.light-theme {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: black;
+  color: white;
+}

@@ -6,7 +6,10 @@
   margin: 7% auto;
   text-align: center;
 }
-
+.container h2{
+  font-size: 2rem;
+  color: rgb(226, 183, 103);
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -47,11 +50,11 @@
   font-size: 2rem;
   margin: 0;
   margin-bottom: 12px;
+  color: rgb(226, 183, 103);
 }
 .taskListContainer .noTasks {
   font-size: 1rem;
   font-weight: 100;
-  color: gray;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,7 +80,6 @@
   border-collapse: collapse;
   font-family: sans-serif;
   font-size: 14px;
-  background-color: #fff;
   border: 1px solid #ccc;
 }
 .taskTable th,
@@ -88,11 +90,12 @@
 }
 
 .taskTable thead {
-  background-color: #f0f0f0;
+  background: none;
 }
 
 .taskTable tbody tr:hover {
   background-color: #f9f9f9;
+  color: #333;
 }
 .taskTable tbody tr td div{
   display: flex;
@@ -100,7 +103,7 @@
 
 .taskTable th {
   font-weight: bold;
-  background-color: #eaeaea;
+  background: none;
 }
 
 .taskTable button {

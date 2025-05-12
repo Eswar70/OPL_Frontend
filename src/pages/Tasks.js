@@ -12,7 +12,7 @@ const Tasks = () => {
     <>
     <Header/>
     <div>
-      <h2>Task Management</h2>
+      <h2 style={{color:"rgb(226, 183, 103)"}}>Task Management</h2>
       <TaskList token={user?.token} tasks={tasks} setTasks={setTasks} />
     </div>
     <Footer/>
