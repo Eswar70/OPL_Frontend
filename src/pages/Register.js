@@ -42,7 +42,7 @@ const Register = () => {
   return (
     <div className={Styles.register}>
       <ThemeToggle />
-      <h2>Register</h2>
+      <h2 style={{color:"rgb(226, 183, 103)"}}>Register</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
         <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />

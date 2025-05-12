@@ -34,7 +34,7 @@ const Login = () => {
   return (
     <div className={styles.container}>
       <ThemeToggle />
-      <h2>Login</h2>
+      <h2 style={{color:"rgb(226, 183, 103)"}}>Login</h2>
       <form onSubmit={handleSubmit}>
         <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
         <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
